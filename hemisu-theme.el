@@ -113,10 +113,26 @@
      `(font-lock-variable-name-face ((t (:foreground ,accent2))))
      `(font-lock-preprocessor-face  ((t (:foreground ,accent2))))
 
+     `(fringe ((nil (:background ,bg))))
      `(vertical-border              ((nil (:foreground ,subtle))))
-     `(header-line                  ((t (:background "#000000"))))
+     `(header-line                  ((t (:background ,bg))))
      `(mode-line ((t (:background ,accent2 :foreground ,bg :box nil))))
-     `(mode-line-inactive ((t (:background ,subtle :foreground ,bg :box nil)))))
+     `(mode-line-inactive ((t (:background ,subtle :foreground ,bg :box nil))))
+
+     ;; helm customization
+     ;; :background ,accent4 is also a good option
+     `(helm-source-header ((t (:foreground ,bg :background ,accent1 :weight bold :height 1.1))))
+     `(helm-minibuffer-prompt ((t (:foreground ,norm))))
+     `(helm-buffer-directory ((t (:foreground ,norm-blue :background ,bg :underline t))))
+     `(helm-ff-dotted-directory ((t (:foreground ,norm-blue :background ,bg :underline t))))
+     `(helm-ff-directory ((t (:foreground ,norm-blue :background ,bg))))
+
+     ;; doom modeline (for spacemacs)
+     `(doom-modeline-project-dir ((t (:foreground ,accent4))))
+
+     ;; org
+     `(org-agenda-structure ((t (:foreground ,faint-red :underline t))))
+     )
 
 
     (custom-theme-set-variables
