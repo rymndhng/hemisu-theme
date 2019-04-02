@@ -119,6 +119,8 @@
      `(mode-line ((t (:background ,accent2 :foreground ,bg :box nil))))
      `(mode-line-inactive ((t (:background ,subtle :foreground ,bg :box nil))))
 
+     `(lsp-ui-sideline-code-action ((t (:foreground ,faint-red))))
+
      ;; helm customization
      ;; :background ,accent4 is also a good option
      `(helm-source-header ((t (:foreground ,bg :background ,accent1 :weight bold :height 1.1))))
@@ -126,6 +128,7 @@
      `(helm-buffer-directory ((t (:foreground ,norm-blue :background ,bg :underline t))))
      `(helm-ff-dotted-directory ((t (:foreground ,norm-blue :background ,bg :underline t))))
      `(helm-ff-directory ((t (:foreground ,norm-blue :background ,bg))))
+     `(dired-directory ((t (:weight bold))))
 
      ;; doom modeline (for spacemacs)
      `(doom-modeline-project-dir ((t (:foreground ,accent4))))
